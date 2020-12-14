@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Sellective</title>
+    <!-- FAVICON -->
+    <link href="" rel="Sellective icon">
+    <!-- PLUGINS CSS STYLE -->
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="../css/jquery.dataTables.css">
+    <link href="../css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/hover-min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style-en.css" rel="stylesheet" type="text/css">
+    <!-- =======================================================
+    ======================================================= -->
+    <div class="spinner-container">
+        <div class="spinner">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:block;" width="171px" height="171px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" fill="none" stroke="#fbbc42" stroke-width="3" r="19" stroke-dasharray="89.5353906273091 31.845130209103033">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1.1627906976744184s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                </circle>
+            </svg>
+        </div>
+    </div>
+
+
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #4b2544;
+            text-align: left;
+            padding: 8px;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body style="background: #FFFFFF">
+<!--  ------------------ start Navigation ----------------->
+<header class="headder">
+    <nav>
+        <div class="home nav-wrapper">
+            <a class="brand-logo white-text" href="#">
+                <img alt="" src="../img/logo.png" style="margin-top: 0;padding: -5px;">
+            </a>
+            <a class="button-collapse" data-activates="mobile-demo" href="#">
+            </a>
+            <ul class="list hide-on-med-and-down">
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="../index.html">Home</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="jobs.html">Jobs</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="qustions.html">Questions</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="news.html">News</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="import-places.html">Places</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown2" data-beloworigin="true" href="#">
+                    Service</i><i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="pricing_plans.html">Plans</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="todays-tasks.html">Today Tasks</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="#">عربي</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown3" data-beloworigin="true" href="#">
+                    Ahmed Elgendy </i><i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                <li style="    color: #e77e23;"><i class="fa fa-bell" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="dropdown-content collection" id="dropdown">
+        <li class="collection-item ">
+            <a href="signinvendor.html">Vendor</a>
+        </li>
+        <li class="collection-item ">
+            <a href="signinUser.html">Client</a>
+        </li>
+
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown1">
+        <li class="collection-item ">
+            <a href="signinvendor.html">Vendor</a>
+        </li>
+        <li class="collection-item ">
+            <a href="signinUser.html">Client</a>
+        </li>
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown2">
+        <li class="collection-item ">
+            <a href="lawyers.html">Lawer</a>
+        </li>
+        <li class="collection-item ">
+            <a href="custom.html">Custom</a>
+        </li>
+        <li class="collection-item ">
+            <a href="acounter.html">Accounter</a>
+        </li>
+        <li class="collection-item ">
+            <a href="personpeapers.html">Custom Paper Cleaner</a>
+        </li>
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown3">
+        <li class="collection-item ">
+           <a href="my-offic.html">My Profile</a>
+        </li>
+        <li class="collection-item ">
+          <a href="my-offic.html">My Reservation</a>
+        </li>
+        <li class="collection-item ">
+            <a href="my-office.html">My Reservation</a></li>
+
+        <li class="collection-item ">
+            <a href="my-offic.html">My Plans</a>
+        </li>
+        <li class="collection-item ">
+            <a href="my-offic.html">My Settings</a></li>
+
+        <li class="collection-item ">
+            <a href="#">Answers</a>
+        </li>
+        <li class="collection-item ">
+            <a href="index.html">Log Out</a>
+        </li>
+
+    </ul>
+</header>
+<!---****************end Navigation ******************--->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+    <div class="tab tabbb">
+        <button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen">My Profile</button>
+        <button class="tablinks" onclick="openCity(event, 'office')">My office</button>
+        <button class="tablinks" onclick="openCity(event, 'Resrvation')">My Resrvation</button>
+        <button class="tablinks" onclick="openCity(event, 'Plans')">My Plans</button>
+        <button class="tablinks" onclick="openCity(event, 'Settings')">Settings</button>
+        <button class="tablinks" onclick="openCity(event, 'Answers')">Answers</button>
+        <button class="tablinks" onclick="openCity(event, 'Jobs')">My Jobs</button>
+        <p style="    background: #4b2544;
+    height: 55px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    color: #fff;">View: 30  <i class="fa fa-eye" aria-hidden="true"></i> <br>
+
+            Favourites: 0  <i class="fa fa-heart" aria-hidden="true"></i>
+
+        </p>
+    </div>
+
+    <div id="Profile" class="tabcontent">
+        <!--    <h3>My Profile</h3>-->
+        <br>
+        <br>
+
+        <ul id="tabs-swipe-demo" class="tabs offic">
+            <li class="tab col s3"><a class="active" href="#swipe-1">Baisc Info</a></li>
+            <li class="tab col s3"><a href="#swipe-2"> Job info </a></li>
+            <li class="tab col s3"><a href="#swipe-3">Contact details</a></li>
+        </ul>
+
+
+        <div id="swipe-1" class="col s12 ">
+
+            <div class="input-field col l12">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="user Name"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+            </div>
+
+            <div class="input-field col l12">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Full Name in arabic"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+            </div>
+
+            <div class="input-field col l12">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Full Name in English"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+            </div>
+
+            <div class="input-field">
+                <i class="fa fa-lock"></i>
+                <input type="password" minlength="8"  maxlength="32"  placeholder="Password" style="border-bottom: none; box-shadow: none" required/>
+            </div>
+
+            <div class="input-field">
+                <i class="fa fa-lock"></i>
+                <input type="password" minlength="8"  maxlength="32"  placeholder="Confirm Password" style="border-bottom: none; box-shadow: none" required/>
+            </div>
+
+            <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #e77e23; padding: 8px" >Save </a><br>
+        </div>
+
+
+
+        <!------  start job info -------------->
+
+        <div id="swipe-2" class="col s12 ">
+            <div class="input-field col l12">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Profession"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+            </div>
+            <div class="input-field col l12">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Sub Profession"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+            </div>
+
+            <div class="input-field col l12">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Experience Year"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+            </div>
+
+            <div class="input-field" data-wow-delay="0.6s">
+                <i class="fa fa-address-card-o"></i>
+                <input type="text" placeholder="Adress"   minlength="4"  maxlength="255"  style="border-bottom: none; box-shadow: none" required />
+            </div>
+            <div style="position: relative;
+                            border-bottom: solid 1px #d2d2d2;
+                            /* max-width: 400px; */
+                            font: 100% Helvetica, Arial, Sans-serif;
+                            font-size: 14px;
+                            /* width: 111%; */
+                            background: #f0f0f0;
+                            border-radius: 27px;
+                            padding-left: 40px;
+                            height: 57px;
+                            border-bottom: #ddd">
+            <select class="search-select"  >
+                <option value="1">Choose a city</option>
+                <option value="2">Cairo</option>
+                <option value="3">Alexandria</option>
+
+            </select>
+</div>
+
+            <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #e77e23; padding: 8px" >Save </a><br>
+
+        </div>
+        <div id="swipe-3" class="col s12 ">
+
+            <div class="input-field">
+                <i class="fa fa-envelope"></i>
+                <input type="email" placeholder="Email address" minlength="3"  maxlength="255" style="border-bottom: none; box-shadow: none"  required/>
+            </div>
+<br>
+
+            <div class="input-field">
+                <i class="fa fa-phone"></i>
+                <input id="sin" minlength="8"  maxlength="15" type="number" placeholder="Phone" required/>
+
+            </div>
+            <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #e77e23; padding: 8px" >Save </a>
+        </div>
+
+
+    </div>
+
+    <div id="office" class="tabcontent">
+        <br>
+        <a class="btn btn-default btn-lg" type="button" href="offic-vendor.html" style="background-color: #4caf50; padding: 8px" >New File</a>
+        <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #e77e23; padding: 8px" >Files</a>
+        <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #4b2544; padding: 8px" >Archive</a>
+<br>
+        <br>
+        <br>
+
+        <table class="table striped">
+            <thead>
+            <tr>
+                <th>SN</th>
+                <th>Client Name </th>
+                <th>Client phone </th>
+                <th>Accredation N mumber</th>
+                <th>Lamation Number</th>
+                <th>Action</th>
+
+
+            </tr>
+            </thead>
+
+
+            <tr>
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+
+
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>mohamed </td>
+                <td>0123456789</td>
+                <td>6583</td>
+                <td>57863</td>
+                <td>
+                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <!-- Modal Structure -->
+
+
+
+
+    </div>
+
+    <div id="Resrvation" class="tabcontent">
+
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th> <button class="btn btn-default prevBtn btn-lg " type="button" style="width: 100%;"  > Current Reservations</button></th>
+                <th> <button class="btn btn-default prevBtn btn-lg " type="button"  style="width: 100%;">Completed Reservation</button></th>
+                <th> <button class="btn btn-default prevBtn btn-lg " type="button"  style="width: 100%;" >Canceled Reservation</button></th>
+            </tr>
+            <tr>
+                <td><label for="username" style="     font-size: 1rem;
+                                                        color: #4b2544;
+                                                        font-weight: bold; ">Searsh:</label><br>
+                                                                        <input type="text" id="username" name="username" style="border: 1px solid #e77e23;"><br>
+                </td>
+                <td><label for="Search" style="    font-size: 1rem;
+                                                color: #4b2544;
+                                                font-weight: bold;">Searsh:</label><br>
+                    <input type="text" id="Search" name="username" style="border: 1px solid #e77e23;"><br>
+                </td>
+                <td>
+                    <label for="search1" style="    font-size: 1rem;
+                    color: #4b2544;
+                    font-weight: bold;">Searsh:</label><br>
+                    <input type="text" id="search1" name="username" style="border: 1px solid #e77e23;"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card-panel" style="height: 150px;background: #fff;border-radius: 28px;margin-top: -6px;" >
+                        <div class="section no-pad-bot ">
+
+                            <li class="w3-bar" style="display: inline-flex;padding: -10px;">
+                                <img src="../img/Avt2.png" class="w3-bar-item circle w3-hide-small " style="width: 20%;" >
+                                <div class="w3-bar-item" style="padding: -10px">
+                                    <h6>Ahmed Elgendy</h6>
+                                    <span style="color: #b45e14">2020/12/3</span><br>
+                                    <span style="color: #b45e14">01152369874</span><br>
+
+                                </div>
+
+                            </li>
+
+                        </div>
+                                    <i class="fa fa-trash " aria-hidden="true"></i>
+                                            <i class="fa fa-star-o " aria-hidden="true" style="    background: #e77e23;
+                        height: 21px;
+                                     border-radius: 5px;"> agree </i>
+                                        </div>
+                                <span style="    font-weight: bold;
+                color: #b45e14;">Showing 1 to 1 of 1 enteres</span>
+                            </td>
+
+                            <td>
+                                <p>No data   available in tabe </p>
+                                <span style="    font-weight: bold;
+                color: #b45e14;">Showing 1 to 1 of 1 enteres</span>
+                            </td>
+                            <td>
+                                <p>No data   available in tabe </p>
+                                <span style="    font-weight: bold;
+                color: #b45e14;">Showing 1 to 1 of 1 enteres</span>
+
+
+                </td>
+            </tr>
+
+
+        </table>
+
+    </div>
+
+    <div id="Plans" class="tabcontent">
+
+        <br>
+        <table id="table_id" class="display">
+            <thead>
+            <tr>
+                <th>SN</th>
+                <th>Plan</th>
+                <th>price</th>
+                <th>from</th>
+                <th>To</th>
+                <th>Status</th>
+                <th>type</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>
+                    <a class="waves-effect waves-light btn" style="width: 70px; background: #4caf50;height: 38px;padding: 1px" onclick="openModal11()">Active</a>
+                </td>
+                <td>Group</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>
+                    <a class="waves-effect waves-light btn" style="width: 70px; background: #4caf50;height: 38px;padding: 1px" onclick="openModal11()">Active</a>
+                </td>
+                <td>Group</td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>
+                    <a class="waves-effect waves-light btn" style="width: 70px; background: #4caf50;height: 38px;padding: 1px" onclick="openModal11()">Active</a>
+                </td>
+                         <td>Group</td>
+
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>
+                    <a class="waves-effect waves-light btn" style="width: 70px; background: #4caf50;height: 38px;padding: 1px" onclick="openModal11()">Active</a>
+                </td>
+                <td>Group</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!------------ POp Up job------------------>
+        <div class="row">
+            <div class="col s12">
+                <!-- Modal Trigger -->
+            </div>
+
+        </div>
+        <div id="modal11" class="modal">
+            <div class="modal-content">
+                <h4 class="center" style="background: #4b2544;color: #FFFFFF;width: 57%;margin-left: 175px;border-radius: 24px;height: 64px;padding: 13px;
+                                        }" >Address</h4>
+                <h5>6 October</h5>
+
+                <div id="modal_contentt" >
+                </div>
+
+                <div class="modal-footer">
+                    <a class="btn btn-default btn-lg center" type="submit" style="background-color: #e77e23; padding: 5px"  href="https://www.google.com/maps">Address On Map</a><br>
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" style="    color: #fff; background: #4b2544;border-radius: 10px;margin-right: 16px;margin-top: -10px;">Close</a>
+                </div>
+            </div>
+        </div>
+        <!------------ POp Up job------------------>
+        <br>
+
+    </div>
+
+    <div id="Settings" class="tabcontent">
+        <!--    <h3>My Profile</h3>-->
+        <br>
+        <br>
+
+        <!-- Switch -->
+        <div class="switch">
+            <h4 style="color: #4b2544;font-size: 20px;">Questions Notification :</h4>
+            <label>
+
+                <input type="checkbox">
+                <span class="lever"></span>
+            </label>
+        </div>
+
+
+       <br>
+        <h5 style="color: #4b2544;font-size: 20px;">Work Time :</h5>
+        <br>
+
+        <div class="time col l3">
+            <input type="date" id="apptt" name="apptt" style="background: #FFFFFF; border-radius: 20px">
+        </div>
+
+
+        <div class="time col l3">
+            <input type="date" id="appt" name="appt" style="background: #FFFFFF; border-radius: 20px">
+        </div>
+
+
+        <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #e77e23; padding: 8px" >Save </a><br>
+
+        <h5 style="color: #4b2544;font-size: 20px;">Work Days :</h5>
+
+        <br>
+        <br>
+        <form action="" class="form1" style="display: block">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Saturday</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Sunday</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Monday</label>
+            <input type="checkbox" id="vehicle4" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Tuesday</label>
+            <input type="checkbox" id="vehicle45" name="vehicle2" value="Car">
+            <label for="vehicle2"> Wednesday</label>
+            <input type="checkbox" id="vehicle6" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Thursday</label>
+            <input type="checkbox" id="vehicle7" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Friday</label>
+        </form>
+
+<br>
+        <h5 style="color: #4b2544;font-size: 20px;">Vacation Days:</h5>
+        <div class="time col l3">
+            <input type="date" id="appttt" name="appttt" style="background: #FFFFFF; border-radius: 20px">
+        </div>
+        <div class="time col l3">
+            <input type="date" id="appttt" name="appttt" style="background: #FFFFFF; border-radius: 20px">
+        </div>
+
+
+        <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #e77e23; padding: 8px" >Save </a><br>
+    </div>
+
+
+
+    <div id="Answers" class="tabcontent">
+
+        <br>
+        <div id="test3" class="col s12">
+            <div class="row" style="    margin-top:10px;">
+                <div class="col  l12 ">
+                    <div class="card-panel" style="background: #fff;border-radius: 28px" >
+                        <div class="section no-pad-bot ">
+                            <i class="fa fa-comment right" aria-hidden="true"><span style="color: #d67425;padding-left: 3px">5</span> </i>
+                            <i class="fa fa-eye right" aria-hidden="true"> <span style="color: #d67425;padding-left: 3px">25</span> </i>
+                            <li class="w3-bar" style="display: inline-flex;padding: 10px;">
+                                <img src="../img/Avt2.png" class="w3-bar-item circle w3-hide-small " style="width:85px">
+                                <div class="w3-bar-item" style="padding: 10px">
+                                    <h5> You Shouuld do that because that is right </h5>
+                                    <span><a style="color: #b45e14" href="lawyers.html.html">Lawer</a></span>
+                                </div>
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+    </div>
+            <div class="row" style="    margin-top: 10px;">
+                <div class="col  l12 ">
+                    <div class="card-panel" style="background: #fff;border-radius: 28px" >
+                        <div class="section no-pad-bot ">
+                            <i class="fa fa-comment right" aria-hidden="true"><span style="color: #d67425;padding-left: 3px">5</span> </i>
+                            <i class="fa fa-eye right" aria-hidden="true"> <span style="color: #d67425;padding-left: 3px">25</span> </i>
+                            <li class="w3-bar" style="display: inline-flex;padding: 10px;">
+                                <img src="../img/Avt2.png" class="w3-bar-item circle w3-hide-small " style="width:85px">
+                                <div class="w3-bar-item" style="padding: 10px">
+                                    <h5> You Shouuld do that because that is right </h5>
+                                    <span><a style="color: #b45e14" href="lawyers.html.html">Lawer</a></span>
+                                </div>
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Jobs" class="tabcontent">
+     <br>
+        <br>
+        <a class="btn btn-default btn-lg" type="button" href="#" style="background-color: #4caf50; padding: 8px; width: 50%; " onclick="openModal1()" >Add Job</a><br>
+
+        <!-----------------------------         ---------------------------------->
+
+        <!------------ POp Up job------------------>
+
+        <div class="row">
+            <div class="col s12">
+                <!-- Modal Trigger -->
+            </div>
+        </div>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4 class="center" style="background: #4b2544;
+    color: #FFFFFF;
+    width: 57%;
+    margin-left: 175px;
+    border-radius: 24px;
+    height: 64px;
+    padding: 13px;
+}" >Add Job</h4>
+
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Titile"  maxlength="25"  minlength="3" style="border-bottom: none; box-shadow: none" required />
+                </div>
+
+
+                <div class="input-field " data-wow-delay="0.6s">
+                    <i class="fa fa-address-card-o"></i>
+                    <input type="text" placeholder="Address"   minlength="4"  maxlength="255"  style="border-bottom: none; box-shadow: none" required />
+                </div>
+
+
+                <div class="input-field">
+                    <i class="fa fa-building"></i>
+                    <input type="text" placeholder="company"  maxlength="25"  minlength="3" style="border-bottom: none; box-shadow: none" required />
+                </div>
+
+                <div class="input-field" data-wow-delay="0.4s">
+                    <i class="fa fa-phone"></i>
+                    <input  minlength="8"  maxlength="15" type="number" placeholder="Phone Number" required/>
+
+                </div>
+
+                <div class="input-field">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email" minlength="3"  maxlength="255" style="border-bottom: none; box-shadow: none"  required/>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">textsms</i>
+                    <input type="text" id="autocomplete-input" class="autocomplete" style="width:600%;" >
+                    <label for="autocomplete-input">Autocomplete</label>
+                </div>
+                
+
+                <div id="modal_content" >
+                </div>
+
+                <div class="modal-footer">
+                    <a class="btn btn-default btn-lg" type="submit" style="background-color: #e77e23; padding: 5px" >Save Changes </a><br>
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" style="    color: #fff;
+                                                                                                                background: #4b2544;
+                                                                                                                border-radius: 10px;
+                                                                                                                margin-right: 16px;
+                                                                                                                margin-top: -10px;">Close</a>
+
+                </div>
+            </div>
+
+
+</div>
+
+        <!------------ POp Up job------------------>
+
+        <br>
+        <table id="table" class="display">
+            <thead>
+            <tr>
+                <th>SN</th>
+                <th>title</th>
+                <th>Description</th>
+                <th>Company</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>phone</th>
+                <th>Settings</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>Active</td>
+                <td>Group</td>
+              <td>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+
+                  <i class="fa fa-trash-o" aria-hidden="true"></i> </td>
+
+
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>Active</td>
+                <td>Group</td>
+                <td>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+
+                    <i class="fa fa-trash-o" aria-hidden="true"></i> </td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>Active</td>
+                <td>Group</td>
+                <td>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+
+                    <i class="fa fa-trash-o" aria-hidden="true"></i> </td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>Active</td>
+                <td>Group</td>
+                <td>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+
+                    <i class="fa fa-trash-o" aria-hidden="true"></i> </td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yearly</td>
+                <td>5</td>
+                <td>2020-10-19</td>
+                <td>2020-04-17</td>
+                <td>Active</td>
+                <td>Group</td>
+                <td>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <p style="font-weight: bold;color: #e77e23;" >  Showing 1 to 1 of 1 entries </p>
+
+    </div>
+</div>
+
+<!---- start-->
+<!---**************** start footer*********************--->
+<footer class="F page-footer">
+    <div class="row">
+        <div class="footer1 col l3 s12 ">
+            <img   class="lazy" class="imagefooter" data-src="../img/logo.png" alt="logo"  >
+            <img  class="lazy" class="imagefooter" data-src="../img/cash.png" alt="footer"  >
+        </div>
+        <div class="footer1 col l3 s12 ">
+            <h5 class="white-text">Home</h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3 left" href="about-us.html">About Us</a> <br></li> <li><a class="grey-text text-lighten-3 left" href="contact-us.html">Contact Us</a> <br></li>
+                <li><a class="grey-text text-lighten-3 left"  href="privicy.html">Condation $ privicy</a><br></li>
+                <img  class="lazy" class="imagefooter" data-src="../img/cash1.png" alt="footer" >
+
+            </ul>
+        </div>
+        <div class="footer1 col l3 s12">
+            <h5 class="white-text center ">Our Service</h5>
+
+            <ul>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="lawyers.html">Lawyer</a> <br></li>
+                <li><a class="grey-text text-lighten-3 left " target="_blank" href="acounter.html">Acouter</a><br></li>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="personpeapers.html">Clear goremment papers</a><br></li>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="custom.html">Customs broker</a></li>
+
+            </ul>
+        </div>
+        <div class="col l3 offset-l2 s12">
+            <h5 class="white-text"> Contact Us </h5>
+            <ul>
+
+                <li><a class="grey-text text-lighten-3 bold" target="_blank" href="tel:+201020105911">phone : +201020105911 </a></li><br>
+                <li><a class="grey-text text-lighten-3 bold" target="_blank" href="mailto:info@selective.com">Email : info@selective.com</a></li>
+                <br>
+                <li><a class="homei fa fa-facebook" target="_blank" href="https://www.facebook.com/sellective1"></a></li>
+                <li><a class="homei fa fa-linkedin" target="_blank" href="https://www.linkedin.com/company/sellective/"></a></li>
+                <li><a class="homei fa fa-twitter" target="_blank" href="https://twitter.com/Sellective1"></a></li>
+                <li><a class="homei fa fa-instagram" target="_blank" href="#"></a></li>
+
+            </ul>
+            <a class="homei fa  fa-commenting-o"  id="add" onclick="show()"> </a> <span style="color:#d67425">  Your opinion Matters</span>
+            <div id="popup">
+                <form id="form2">
+                    <h4 style="color: #e77e23;font-weight: bold;">Feadback Contact</h4>
+                    <br>
+                    <p1>title:</p1>
+                    <br>
+
+                    <input class="in" id="name" placeholder=" title" name="name" type="text"/>
+                    <br>
+                    <p1>feedback description:</p1>
+                    <br>
+                    <input class="in" id="age"  placeholder="feedback description" name="age" type="text"/>
+                    <br>
+                    <a class=" waves-light btn-large " id="submit"  onclick="add()"  style="margin-left: -50%;
+                                                                                    background: #e77e23;
+                                                                                    border-radius: 24px;">Add</a>
+                    <a class=" waves-light btn-large " id="close" onclick="hide()"> close </a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="FF footer-copyright">
+        <div class="container center">
+            Copyright Text © 2020
+            <a class="grey-text text-lighten-4" target="_blank" href="https://www.paymac.net/">paymac</a>
+        </div>
+    </div>
+</footer>
+<script> $(document).ready(function(){
+
+    $('ul.tabs').tabs({
+        swipeable : true,
+        responsiveThreshold : 1920
+    });
+});</script>
+</body>
+<!--------------------- End Footer----------->
+<script src="../js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+<script src="../js/custom-en.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/jquery.dataTables.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Sellective</title>
+    <!-- FAVICON -->
+    <link href="" rel="Sellective  icon">
+    <!-- PLUGINS CSS STYLE -->
+    <meta content="" name="description">
+ 
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/hover-min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style-en.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ============================================================================================================ -->
+    <div class="spinner-container">
+        <div class="spinner">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:block;" width="171px" height="171px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" fill="none" stroke="#fbbc42" stroke-width="3" r="19" stroke-dasharray="89.5353906273091 31.845130209103033">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1.1627906976744184s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                </circle>
+            </svg>
+        </div>
+    </div>
+
+</head>
+<body>
+
+
+<!--  ------------------ start Navigation ----------------->
+<header class="headder">
+    <nav>
+        <div class="home nav-wrapper">
+            <a class="brand-logo white-text" href="#">
+                <img alt="" src="../img/logo.png" style="margin-top: 0;padding: -5px;">
+            </a>
+            <a class="button-collapse" data-activates="mobile-demo" href="#">
+            </a>
+            <ul class="list hide-on-med-and-down">
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="../index.html">Home</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="jobs.html">Jobs</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="qustions.html">Questions</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="news.html">News</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="import-places.html">Places</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown2" data-beloworigin="true" href="#">
+                    Service</i><i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                <li><a class="dropdown-button" data-activates="dropdown" data-beloworigin="true" href="#">
+                    sign Up<i class="mdi-navigation-arrow-drop-down right"></i></a></li>   
+                <li><a class="dropdown-button" data-activates="dropdown1" data-beloworigin="true" href="#">
+                    Sign In</i><i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+  <li><a class="fa fa-heart" aria-hidden="true" href="favorite.html"></a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="#">عربي</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="dropdown-content collection" id="dropdown">
+        <li class="collection-item ">
+            <a href="signinvendor.html">Vendor</a>
+        </li>
+        <li class="collection-item ">
+            <a href="signinUser.html">Client</a>
+        </li>
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown1">
+        <li class="collection-item ">
+
+            <a href="signinvendor.html">Vendor</a>
+        </li>
+        <li class="collection-item ">
+            <a href="signinUser.html">Client</a>
+        </li>
+        </li>
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown2">
+        <li class="collection-item ">
+            <a href="lawyers.html">Lawer</a>
+        </li>
+        <li class="collection-item ">
+            <a href="custom.html">Custom</a>
+        </li>
+        <li class="collection-item ">
+            <a href="acounter.html">Accounter</a>
+        </li>
+        <li class="collection-item ">
+            <a href="personpeapers.html">Custom Paper Cleaner</a>
+        </li>
+        </li>
+    </ul>
+</header>
+
+<!---****************end Navigation *********************--->
+<!-- ***************   strat sign in and singe up vendors*****************************-->
+<div class="formm">
+    <div class="forms-container">
+        <div class="signin-signup">
+            <!--   start sign in vendors -->
+            <form action="#" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field" style="max-width: 400px">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email" minlength="3"  maxlength="255" style="border-bottom: none; box-shadow: none"  required/>
+                </div>
+                <div class="input-field" style="max-width: 400px;">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password"  maxlength="25"  minlength="3" style="border-bottom: none; box-shadow: none ;" required/>
+                </div>
+                <p>
+                    <input type="checkbox" class="red" id="test5" required/>
+                    <label for="test5">Remember me</label>
+                </p>
+                <input type="submit" value="Login" class="btn solid" />
+
+                <a href="forget-password.html" style="color: #b45e14">Did you forget your password ?</a>
+            </form>
+            <!--**********************  end sign in vendors ***********************-->
+
+
+            <!--**********************  start sign  up vendors ***********************-->
+            <form action="#" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <br>
+                <div class="container">
+                    <div class="stepwizard">
+                        <div class="stepwizard-row setup-panel">
+                            <div class="stepwizard-step">
+                                <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                                <p>Personal info</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <a href="#step-2" type="button" class="btn btn-default btn-circle " disabled="disabled">2</a>
+                                <p>Job info</p>
+                            </div>
+                        </div>
+                    </div>
+
+      <!--******************** this tab ******************************************-->
+
+                    <form role="form">
+                        <div class="row setup-content" id="step-1">
+                            <div class="col-xs-12">
+                                <div class="col-md-12">
+                                    <br>
+                                    <div class="input-field">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" placeholder="Username"  maxlength="25"  minlength="3" style="border-bottom: none; box-shadow: none" required />
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" placeholder="Full Name in Arabic" maxlength="50"  minlength="3" style="border-bottom: none; box-shadow: none" required />
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" placeholder="Full Name in English" maxlength="50"  minlength="3" style="border-bottom: none; box-shadow: none" required />
+                                    </div>
+
+                                    <div class="input-field">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" minlength="8"  maxlength="32"  placeholder="Password" style="border-bottom: none; box-shadow: none" required/>
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" minlength="3" maxlength="32"   placeholder="Confirm Password" style="border-bottom: none; box-shadow: none" required/>
+                                    </div>
+
+                                </div>
+                                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="submit" >Next</button>
+                                </div>
+                            </div>
+
+                        <div class="row setup-content" id="step-2">
+                            <div class="col-xs-12">
+                                <div class="col-md-12">
+                                    <div class="input-field  wow bounceInLeft" data-wow-delay="0.2s">
+                                        <i class="fa fa-envelope"></i>
+                                        <input type="email" placeholder="Email Adress" minlength="3"  maxlength="255"  style="border-bottom: none; box-shadow: none" required />
+                                    </div>
+                                    <div class="input-field  wow bounceInLeft" data-wow-delay="0.4s">
+                                        <i class="fa fa-phone"></i>
+
+                                        <input id="sin" minlength="8"  maxlength="15" type="number" placeholder="Phone Number" required/>
+
+                                    </div>
+                                    <div class="input-field  wow bounceInLeft" data-wow-delay="0.6s">
+                                        <i class="fa fa-address-card-o"></i>
+                                        <input type="text" placeholder="Adress Here"   minlength="4"  maxlength="255"  style="border-bottom: none; box-shadow: none" required />
+                                    </div>
+            <!--*** ****************** this is the selectore *****************
+                                    <select name="cars" id="cars" style=" margin-left:0px;
+                                            width: 100%;
+                                            /* margin-top: 50px; */
+                                            ine: aliceblue;
+                                            visibility: visible;
+                                            animation-delay: 0.9s;
+                                            animation-name: bounceInLeft;
+                                            background: #f0f0f0;
+                                            color: #acacac;
+                                            height: 58px;
+                                            outline: #fff;
+                                            border-radius: 29px;" class=" wow bounceInLeft" data-wow-delay="0.7s">
+                                        <option selected disabled hidden> Choose a city </option>
+                                            <option value="Cairo">Cairo</option>
+                                            <option value="Alexandria">Alexandria</option>
+                                            <option value="Qalyubia">Qalyubia</option>
+                                            <option value="Menoufia">Menoufia</option>
+
+
+                                    </select>
+                                   *** ****************** this is the selectore ***********************-
+                                    <select name="cars" id="cars" style=" margin-left:0px;
+                                            width: 100%;
+                                            /* margin-top: 50px; */
+                                            ine: aliceblue;
+                                            visibility: visible;
+                                            animation-delay: 0.9s;
+                                            animation-name: bounceInLeft;
+                                            background: #f0f0f0;
+                                            color: #acacac;
+                                            height: 58px;
+                                            outline: #fff;
+                                            border-radius: 29px;" class=" wow bounceInLeft" data-wow-delay="0.8s">
+                                        <option selected disabled hidden> Choose profession</option>
+
+                                            <option value="Cairo">Lawyer</option>
+                                            <option value="Alexandria">Custom</option>
+                                            <option value="Qalyubia">Acounter</option>
+                                            <option value="Menoufia">Paper cleardnce</option>
+                                    </select>
+                                    *** ****************** this is the selectore *****
+
+                                    <select name="cars" id="cars" style="margin-left:0px;
+                                            width: 100%;
+                                            /* margin-top: 50px; */
+                                            ine: aliceblue;
+                                            visibility: visible;
+                                            animation-delay: 0.9s;
+                                            animation-name: bounceInLeft;
+                                            background: #f0f0f0;
+                                            color: #acacac;
+                                            height: 58px;
+                                            outline: #fff;
+                                            border-radius: 29px;" class="wow bounceInLeft"  data-wow-delay="0.9s">
+                                        <option selected disabled hidden> Choose profession</option>
+                                            <option value="Cairo">Administrative </option>
+                                            <option value="Alexandria">International </option>
+                                            <option value="Qalyubia">judiciary</option>
+                                            <option value="Menoufia">Arbitration</option>
+                                        </optgroup>
+                                    </select>
+                                    ******************-->
+
+                                    <select class="search-select" >
+                                        <option value="1">Choose a city</option>
+                                        <option value="2">Cairo</option>RF
+                                        <option value="3">Alexandria</option>
+
+                                    </select>
+                               <br>
+                                    <select class="search-select  ">
+                                        <option value="1">Choose profession</option>
+                                        <option value="2">Lawyer</option>
+                                        <option value="3">Custom</option>
+
+                                    </select>
+                              <br>
+                                    <select class="search-select  ">
+                                        <option  hidden>Choose sub profession</option>
+                                        <option value="2">Administrative</option>
+                                        <option value="3">International</option>
+
+                                    </select>
+                                    <br>
+                                    <p>
+                                        <input type="checkbox" class="red" id="test6" required/>
+                                        <label for="test6">Do you agree to the terms ?</label>
+
+                                    </p>
+                                </div>
+                                <button class="btn btn-default prevBtn btn-lg pull-left" type="button"  style="margin-top: 60px;">Prev</button>
+                                <button class="btn btn-primary nextBtn btn-lg pull-right" type="submit" style="width: 172px; margin-top: 60px;" >Create Acount</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </form>
+            <!-- ********************** end the  form  sign up******************************-->
+        </div>
+    </div>
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Do You Have an account ?</h3>
+                <p>
+                    You can create an account from here
+                </p>
+                <h3 style="color: #e77e23;">
+                    Vendor
+                </h3>
+                <button class="btn transparent" id="sign-up-btn">
+                    Sign up
+                </button>
+            </div>
+            <img src="../img/sign.png" class="image" alt="" style="width:60%" />
+        </div>
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>You already have an account ?</h3>
+                <p>
+                    Sign in directly from here
+                </p>
+                <h3 style="color: #e77e23;">
+                    Vendor
+                </h3>
+                <button class="btn transparent" id="sign-in-btn">
+                    Sign in
+                </button>
+            </div>
+            <img src="../img/sign.png" class="image" alt="" style="width: 50%;" />
+        </div>
+    </div>
+</div>
+<!-- ***************   end  sign in and singe up vendors*****************************-->
+<footer class="F page-footer">
+    <div class="row">
+        <div class="footer1 col l3 s12 ">
+            <img   class="lazy" class="imagefooter" data-src="../img/logo.png" alt="logo"  >
+            <img  class="lazy" class="imagefooter" data-src="../img/cash.png" alt="footer"  >
+        </div>
+        <div class="footer1 col l3 s12 ">
+            <h5 class="white-text">Home</h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3 left" href="about-us.html">About Us</a> <br></li> <li><a class="grey-text text-lighten-3 left" href="contact-us.html">Contact Us</a> <br></li>
+                <li><a class="grey-text text-lighten-3 left"  href="privicy.html">Condation $ privicy</a><br></li>
+                <img  class="lazy" class="imagefooter" data-src="../img/cash1.png" alt="footer" >
+
+            </ul>
+        </div>
+        <div class="footer1 col l3 s12">
+            <h5 class="white-text center ">Our Service</h5>
+
+            <ul>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="lawyers.html">Lawyer</a> <br></li>
+                <li><a class="grey-text text-lighten-3 left " target="_blank" href="acounter.html">Acouter</a><br></li>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="personpeapers.html">Clear goremment papers</a><br></li>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="custom.html">Customs broker</a></li>
+
+            </ul>
+        </div>
+        <div class="col l3 offset-l2 s12">
+            <h5 class="white-text"> Contact Us </h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3 bold" target="_blank" href="tel:+201020105911">phone : +201020105911 </a></li><br>
+                <li><a class="grey-text text-lighten-3 bold" target="_blank" href="mailto:info@selective.com">Email : info@selective.com</a></li>
+                <br>
+                <li><a class="homei fa fa-facebook" target="_blank" href="https://www.facebook.com/sellective1"></a></li>
+                <li><a class="homei fa fa-linkedin" target="_blank" href="https://www.linkedin.com/company/sellective/"></a></li>
+                <li><a class="homei fa fa-twitter" target="_blank" href="https://twitter.com/Sellective1"></a></li>
+                <li><a class="homei fa fa-instagram" target="_blank" href="#"></a></li>
+
+            </ul>
+
+            <a class="homei fa  fa-commenting-o"  id="add" onclick="show()"> </a> <span style="color:#d67425">  Your opinion Matters</span>
+            <div id="popup">
+
+                <form id="form2">
+
+                    <h4 style="    color: #e77e23;
+    font-weight: bold;">Feadback Contact</h4>
+
+                    <br>
+                    <p1>title:</p1>
+                    <br>
+                    <input class="in" id="name" placeholder=" title" name="name" type="text"/>
+                    <br>
+                    <p1>feedback description:</p1>
+                    <br>
+                    <input class="in" id="age"  placeholder="feedback description" name="age" type="text"/>
+                    <br>
+                    <a class=" waves-light btn-large " id="submit"  onclick="add()"  style="margin-left: -50%;
+                                                                                    background: #e77e23;
+                                                                                    border-radius: 24px;">Add</a>
+                    <a class=" waves-light btn-large " id="close" onclick="hide()"> close </a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="FF footer-copyright">
+        <div class="container center">
+            Copyright Text © 2020
+            <a class="grey-text text-lighten-4" target="_blank" href="https://www.paymac.net/">paymac</a>
+        </div>
+    </div>
+</footer>
+<!---**************** start footer*********************--->
+
+
+
+
+</body>
+<!--------------------- End Footer----------->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+<script src="../js/custom-en.js"></script>
+<script src="../js/app.js"></script>
+<script src="../contactform/contactform.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>

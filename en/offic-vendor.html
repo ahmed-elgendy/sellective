@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Sellective</title>
+    <!-- FAVICON -->
+    <link href="" rel="Sellective icon">
+    <!-- PLUGINS CSS STYLE -->
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/hover-min.css" rel="stylesheet" type="text/css">
+    <link href="../css/style-en.css" rel="stylesheet" type="text/css">
+    <!-- =======================================================
+    ======================================================= -->
+    <div class="spinner-container">
+        <div class="spinner">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:block;" width="171px" height="171px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" fill="none" stroke="#fbbc42" stroke-width="3" r="19" stroke-dasharray="89.5353906273091 31.845130209103033">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1.1627906976744184s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                </circle>
+            </svg>
+        </div>
+    </div>
+
+
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 3px solid #ffffff;
+            text-align: left;
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body style="background: #FFFFFF">
+<!--  ------------------ start Navigation ----------------->
+<header class="headder">
+    <nav>
+        <div class="home nav-wrapper">
+            <a class="brand-logo white-text" href="#">
+                <img alt="" src="../img/logo.png" style="margin-top: 0;padding: -5px;">
+            </a>
+            <a class="button-collapse" data-activates="mobile-demo" href="#">
+            </a>
+            <ul class="list hide-on-med-and-down">
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="../index.html">Home</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="jobs.html">Jobs</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="qustions.html">Questions</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="news.html">News</a></li>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="import-places.html">Places</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown2" data-beloworigin="true" href="#">
+                    Service</i><i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="pricing_plans.html">Plans</a></li>
+
+                <li><a class="white-text darken-4 hvr-underline-from-center" href="#">عربي</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown3" data-beloworigin="true" href="#">
+                    Ahmed Elgendy </i><i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                <li style="    color: #e77e23;"><i class="fa fa-bell" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="dropdown-content collection" id="dropdown">
+        <li class="collection-item ">
+            <a href="signinvendor.html">Vendor</a>
+        </li>
+        <li class="collection-item ">
+            <a href="signinUser.html">Client</a>
+        </li>
+
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown1">
+        <li class="collection-item ">
+            <a href="signinvendor.html">Vendor</a>
+        </li>
+        <li class="collection-item ">
+            <a href="signinUser.html">Client</a>
+        </li>
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown2">
+        <li class="collection-item ">
+            <a href="lawyers.html">Lawer</a>
+        </li>
+        <li class="collection-item ">
+            <a href="custom.html">Custom</a>
+        </li>
+        <li class="collection-item ">
+            <a href="acounter.html">Accounter</a>
+        </li>
+        <li class="collection-item ">
+            <a href="personpeapers.html">Custom Paper Cleaner</a>
+        </li>
+    </ul>
+    <ul class="dropdown-content collection" id="dropdown3">
+        <li class="collection-item ">
+           <a href="my-offic.html">My Profile</a>
+        </li>
+        <li class="collection-item ">
+<a href="my-offic.html">My Reservation</a>
+        </li>
+        <li class="collection-item ">
+            <a href=#">My Reservation</a>
+        </li>
+
+        <li class="collection-item ">
+            <a href="my-offic.html">My Plans</a>
+        </li>
+        <li class="collection-item ">
+            <a href="my-offic.html">My Settings</a></li>
+
+        <li class="collection-item ">
+            <a href="#">Answers</a>
+        </li>
+        <li class="collection-item ">
+            <a href="index.html">Log Out</a>
+        </li>
+
+    </ul>
+</header>
+<!---****************end Navigation ******************--->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+    <div class="tab tabb">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Client Data </button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Opponen Data</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Case Data</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo1')">Payments</button>
+
+    </div>
+
+    <div id="London" class="tabcontent">
+        <!--    <h3>My Profile</h3>-->
+        <br>
+        <br>
+        <div class="input-field col l6">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Client Name"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field col l6">
+            <i class="fa fa-phone"></i>
+            <input type="text" placeholder=" Accreditation Number"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field  col l6">
+            <i class="fa fa-phone"></i>
+
+            <input id="" minlength="8"  maxlength="15" type="number" placeholder="client Phone" required/>
+
+        </div>
+
+        <div class="input-field  col l6">
+            <i class="fa fa-phone"></i>
+
+            <input id="sin" minlength="8"  maxlength="15" type="number" placeholder="Another client Number" required/>
+
+        </div>
+
+        <div class="input-field  col l6">
+            <i class="fa fa-phone"></i>
+
+            <input id="" minlength="8"  maxlength="15" type="number" placeholder="Another client Number" required/>
+
+        </div>
+
+
+        <div class="input-field col l6">
+            <i class="fa fa-map-marker"></i>
+            <input type="text" placeholder=" client Address"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+        <div class="input-field col l6">
+            <i class="fa  fa-calendar"></i>
+            <input type="text" placeholder="Accreditation Date "   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field col l6">
+            <i class="fa  fa-location-arrow"></i>
+            <input type="text" placeholder="Accreditation Extraction Place"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <br>
+        <br>
+        <br>
+        <div class="input-field col l6">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Opponent Name"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field col l6">
+            <i class="fa fa-map-marker"></i>
+            <input type="text" placeholder=" Opponent Address"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+
+        <div class="input-field col l6">
+            <i class="fa fa-recycle"></i>
+            <input type="text" placeholder="Opponent Recipe "   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field col l6">
+            <i class="fa fa-rebel"></i>
+            <input type="text" placeholder="opponent Represntaione "   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+        <div class="input-field">
+            <i class="fa fa-rebel"></i>
+            <input type="text" placeholder="opponent Notes " maxlength="225"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+    </div>
+
+
+    <div id="Tokyo" class="tabcontent">
+
+
+
+        <div class="input-field col l6">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Case Name"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+
+        <div class="input-field col l6">
+            <i class="fa  fa-calendar"></i>
+            <input type="text" placeholder="Session Date "   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field  col l6">
+            <i class="fa fa-keyboard-o"></i>
+
+            <input id="" minlength="8"  maxlength="15" type="text" placeholder="Lawsuit Type" required/>
+
+        </div>
+
+        <div class="input-field  col l6">
+            <i class="fa fa-phone"></i>
+            <input id="sin" minlength="8"  maxlength="15" type="limitation number" placeholder="limitation Number" required/>
+        </div>
+
+        <div class="input-field  col l6">
+            <i class="fa  fa-calendar"></i>
+
+            <input id="" minlength="8"  maxlength="15" type="number" placeholder="Misdemeanor Number" required/>
+
+        </div>
+        <div class="input-field col l6">
+            <i class="fa fa-map-marker"></i>
+            <input type="text" placeholder=" case Judgmet"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+        <div class="input-field col l6">
+            <i class="fa  fa-phone"></i>
+            <input type="text" placeholder="court Name"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field col l6">
+            <i class="fa  fa-calendar"></i>
+            <input type="text" placeholder=" Delay Date "   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+        <div class="input-field col l6">
+            <i class="fa  fa-info-circle"></i>
+            <input type="text" placeholder="circle judiciary"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+        <div class="input-field col l6">
+            <i class="fa  fa-calendar"></i>
+            <input type="text" placeholder="submission Case Date "   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+        <div class="input-field">
+            <i class="fa  fa-calendar"></i>
+            <input type="text" placeholder="Case Notes"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+    </div>
+    <div id="Tokyo1" class="tabcontent">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="input-field">
+            <i class="fa  fa-list-ul"></i>
+            <input type="text" placeholder="Total Payments"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+        <br>
+        <br>
+
+
+        <div class="input-field">
+            <i class="fa  fa-calendar"></i>
+            <input type="text" placeholder="First Deposit"   maxlength="25"  minlength="3"  style="border-bottom: none; box-shadow: none" />
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<!---- start-->
+<!---**************** start footer*********************--->
+<footer class="F page-footer">
+    <div class="row">
+        <div class="footer1 col l3 s12 ">
+            <img   class="lazy" class="imagefooter" data-src="../img/logo.png" alt="logo"  >
+            <img  class="lazy" class="imagefooter" data-src="../img/cash.png" alt="footer"  >
+        </div>
+        <div class="footer1 col l3 s12 ">
+            <h5 class="white-text">Home</h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3 left" href="about-us.html">About Us</a> <br></li> <li><a class="grey-text text-lighten-3 left" href="contact-us.html">Contact Us</a> <br></li>
+                <li><a class="grey-text text-lighten-3 left"  href="privicy.html">Condation $ privicy</a><br></li>
+                <img  class="lazy" class="imagefooter" data-src="../img/cash1.png" alt="footer" >
+
+            </ul>
+        </div>
+        <div class="footer1 col l3 s12">
+            <h5 class="white-text center ">Our Service</h5>
+
+            <ul>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="lawyers.html">Lawyer</a> <br></li>
+                <li><a class="grey-text text-lighten-3 left " target="_blank" href="acounter.html">Acouter</a><br></li>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="personpeapers.html">Clear goremment papers</a><br></li>
+                <li><a class="grey-text text-lighten-3 left" target="_blank" href="custom.html">Customs broker</a></li>
+
+            </ul>
+        </div>
+        <div class="col l3 offset-l2 s12">
+            <h5 class="white-text"> Contact Us </h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3 bold" target="_blank" href="tel:+201020105911">phone : +201020105911 </a></li><br>
+                <li><a class="grey-text text-lighten-3 bold" target="_blank" href="mailto:info@selective.com">Email : info@selective.com</a></li>
+                <br>
+                <li><a class="homei fa fa-facebook" target="_blank" href="https://www.facebook.com/sellective1"></a></li>
+                <li><a class="homei fa fa-linkedin" target="_blank" href="https://www.linkedin.com/company/sellective/"></a></li>
+                <li><a class="homei fa fa-twitter" target="_blank" href="https://twitter.com/Sellective1"></a></li>
+                <li><a class="homei fa fa-instagram" target="_blank" href="#"></a></li>
+
+            </ul>
+
+            <a class="homei fa  fa-commenting-o"  id="add" onclick="show()"> </a> <span style="color:#d67425">  Your opinion Matters</span>
+            <div id="popup">
+
+                <form id="form2">
+
+
+                    <h4 style="    color: #e77e23;
+    font-weight: bold;">Feadback Contact</h4>
+                    <br>
+                    <p1>title:</p1>
+                    <br>
+                    <input class="in" id="name" placeholder=" title" name="name" type="text"/>
+                    <br>
+                    <p1>feedback description:</p1>
+                    <br>
+                    <input class="in" id="age"  placeholder="feedback description" name="age" type="text"/>
+                    <br>
+                    <a class=" waves-light btn-large " id="submit"  onclick="add()"  style="margin-left: -50%;
+                                                                                    background: #e77e23;
+                                                                                    border-radius: 24px;">Add</a>
+                    <a class=" waves-light btn-large " id="close" onclick="hide()"> close </a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="FF footer-copyright">
+        <div class="container center">
+            Copyright Text © 2020
+            <a class="grey-text text-lighten-4" target="_blank" href="https://www.paymac.net/">paymac</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+<!--------------------- End Footer----------->
+<script src="../js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+<script src="../js/custom-en.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
