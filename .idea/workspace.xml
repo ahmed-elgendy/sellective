@@ -19,38 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a49019a-ccef-4a21-bf80-f527a8f6d48b" name="Default Changelist" comment="[dev]">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-en.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-en.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/acounter.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/acounter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/contact-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/custom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/favorite.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/favorite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/forget-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/forget-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/import-places.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/import-places.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/jobs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/lawyers.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/lawyers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/my-offic.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/my-offic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/my-profile-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/my-profile-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/offic-vendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/offic-vendor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/one-Jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/one-Jobs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/one-Question-page-without-Answers.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/one-Question-page-without-Answers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/one-news-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/one-news-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/one-question-without-answers-as-a-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/one-question-without-answers-as-a-client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/one-qustions.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/one-qustions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/order_detils.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/order_detils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/personpeapers.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/personpeapers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/pricing_plans.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/pricing_plans.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/privicy.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/privicy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/qustions.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/qustions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/resetpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/resetpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/show-vendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/show-vendor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/signinUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/signinUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/signinvendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/signinvendor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/todays-tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/en/todays-tasks.html" afterDir="false" />
-    </list>
+    <list default="true" id="8a49019a-ccef-4a21-bf80-f527a8f6d48b" name="Default Changelist" comment="[dev]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1imOtlTDBOdjlGJbpNU08TVgMmh" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -81,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../freelance/Ninestars/fastcompany" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -152,6 +121,7 @@
       <workItem from="1607500445281" duration="6979000" />
       <workItem from="1607714958089" duration="311000" />
       <workItem from="1607945377715" duration="2379000" />
+      <workItem from="1608061275558" duration="246000" />
     </task>
     <task id="LOCAL-00001" summary="[dev]">
       <created>1602509649500</created>
@@ -188,10 +158,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="426" y="108" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1607246051239" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1607715364837">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1608061521318">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1607715364837" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1608061521318" />
     <state x="301" y="75" key="SettingsEditor" timestamp="1602679034840">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
